@@ -33,6 +33,7 @@ dir_libexec = get_option('prefix')/get_option('libexecdir')/'xkbcommon'
 cflags = [
     '-fno-strict-aliasing',
     '-Wno-unused-parameter',
+    '/wd4100', # MSVC C4100: unreferenced formal parameter
     '-Wno-missing-field-initializers',
     '-Wpointer-arith',
     '-Wmissing-declarations',
